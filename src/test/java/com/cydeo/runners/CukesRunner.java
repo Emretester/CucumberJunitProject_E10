@@ -9,7 +9,8 @@ import org.junit.runner.*;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@Regression"
+        tags = "@scenarioOutline"
 )
 public class CukesRunner {
+
 }
