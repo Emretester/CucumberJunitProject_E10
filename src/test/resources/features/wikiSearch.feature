@@ -21,12 +21,18 @@ Feature: Wikipedia search functionality and verifications
     Then User sees "<expectedTitle>" is in the wiki title
     Then User sees "<expectedMainHeader>" is in the main header
 
-    @scenarioOutline
+    @soccerPlayers
     Examples: search values we are going to be using in this scenario is as below
       | searchValue       | expectedTitle     | expectedMainHeader |
       | Steve Jobs        | Steve Jobs        | Steve Jobs         |
       | Cristiano Ronaldo | Cristiano Ronaldo | Cristiano Ronaldo  |
       | Bob Marley        | Bob Marley        | Bob Marley         |
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
-      | Anthony Hopkins   | Anthony Hopkins   | Anthony Hopkins    |
-      | Marie Curie       | Marie Curie       | Marie Curie        |
+      | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
+
+    @scientists
+    Examples:
+      | searchValue  | expectedTitle | expectedMainHeader |
+      | Marie Curie  |    | Marie Curie        |
+      | Lady Gaga    | Lady Gaga     | Lady Gaga          |
+      | Kate Winslet | Kate Winslet  | Kate Winslet       |
