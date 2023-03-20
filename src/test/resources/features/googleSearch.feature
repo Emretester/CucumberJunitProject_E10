@@ -27,12 +27,12 @@ Feature: Google search functionality
     When user types "capital of <country>" and clicks enter
     Then User should see "<capital>" in the result
     Examples:
-      |country|capital|
-      |Turkey |Ankara |
-      |USA    |Washington DC|
-      |Ukraine|Kyiv         |
-      |Gemany |Berlin       |
-      |UK     |London       |
-      |Latvia |Riga         |
-      |Greece |Athens       |
+      | country | capital       |
+      | Turkey  | Ankara        |
+      | USA     | Washington DC |
+      | Ukraine | Kyiv          |
+      | Gemany  | Berlin        |
+      | UK      | London        |
+      | Latvia  | Riga          |
+      | Greece  | Athens        |
 
