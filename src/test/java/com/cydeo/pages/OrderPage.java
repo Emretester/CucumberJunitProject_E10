@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class OrderPage {
+public class OrderPage extends BasePage {
 
-    public OrderPage(){
+    public OrderPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -45,5 +45,6 @@ public class OrderPage {
 
     @FindBy(css = "button[type='submit']")
     public WebElement processOrderBtn;
+
 
 }

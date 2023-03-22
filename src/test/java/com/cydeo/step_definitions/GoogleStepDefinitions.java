@@ -74,4 +74,6 @@ public class GoogleStepDefinitions {
         String actualValue = googleSearchPage.getCapital();
         Assert.assertEquals(expectedCapital, actualValue);
     }
+
+
 }

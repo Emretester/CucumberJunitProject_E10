@@ -1,6 +1,6 @@
 Feature: Wikipedia search functionality and verifications
 
-    #WSF-45234 --> potential jira ticket number
+  #WSF-45234 --> potential jira ticket number
 
   Scenario: Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
@@ -14,6 +14,7 @@ Feature: Wikipedia search functionality and verifications
     And User clicks wiki search button
     Then User sees "Steve Jobs" is in the main header
 
+  @scenarioOutline
   Scenario Outline: Wikipedia Search Functionality Title Verification
     Given User is on Wikipedia home page
     When User types "<searchValue>" in the wiki search box
@@ -29,10 +30,14 @@ Feature: Wikipedia search functionality and verifications
       | Bob Marley        | Bob Marley        | Bob Marley         |
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
       | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
-
+    #BREAK UNTIL 11.10AM CST
     @scientists
     Examples:
       | searchValue  | expectedTitle | expectedMainHeader |
-      | Marie Curie  |    | Marie Curie        |
+      | Marie Curie  |               | Marie Curie        |
       | Lady Gaga    | Lady Gaga     | Lady Gaga          |
       | Kate Winslet | Kate Winslet  | Kate Winslet       |
+
+      #to beautify the pipes above
+      #mac: command + option + L
+      #windows: control + alt + L
