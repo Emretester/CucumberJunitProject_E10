@@ -20,6 +20,7 @@ public class Wiki_StepDefinitions {
     public void user_types_in_the_wiki_search_box(String string) {
 
         wikiSearchPage.searchBox.sendKeys(string);
+
     }
 
     @When("User clicks wiki search button")
@@ -31,7 +32,6 @@ public class Wiki_StepDefinitions {
 
     @Then("User sees {string} is in the wiki title")
     public void user_sees_is_in_the_wiki_title(String string) {
-
         //verify actual title contains string (coming from feature file)
         Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
 
@@ -43,6 +43,9 @@ public class Wiki_StepDefinitions {
         Assert.assertTrue(wikiSearchPage.mainHeader.isDisplayed());
 
         Assert.assertTrue(wikiSearchPage.mainHeader.getText().equals(string));
+        //3.06 pm cst
 
     }
+
+
 }

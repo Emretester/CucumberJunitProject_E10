@@ -26,5 +26,4 @@ public class GoogleSearchPage {
         return Driver.getDriver().findElement(By.xpath("//a[@class='FLP8od']")).getText();
     }
 
-
 }

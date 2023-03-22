@@ -1,6 +1,6 @@
 Feature: Web table user order feature
 
-  @wip
+
   Scenario: User should be able to place order and order seen in web table
     Given user is already logged in and on order page
     When user selects product type "Familybea"
@@ -48,4 +48,4 @@ Feature: Web table user order feature
       | Screenable  | 4        | CV Raman              | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | CV Raman              |
       | MoneyCog    | 5        | Galileo               | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Galileo               |
       | MoneyCog    | 6        | Isaac Newton          | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Isaac Newton          |
-      | MoneyCog    | 6        | Arnold Schwarzenegger | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Arnold Schwarzenegger |
+      | MoneyCog    | 6        | Arnold Schwarzenegger | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Arnold Schwarzenegger
